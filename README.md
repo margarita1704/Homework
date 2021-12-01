@@ -1,4 +1,4 @@
-What is VIM?
+## What is VIM?
 
 Vi was the first screen-oriented text editor created for Unix, it was designed to be simple yet powerful for text manipulation. Vim (Vi IMproved) as its name suggests, is a clone of Vi and offers yet more features than Vi. It’s free and open source, designed for use both from a command-line interface and as a standalone application in a graphical user interface (GUI).
 
