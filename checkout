@@ -1,0 +1,61 @@
+                                       Git checkout
+
+
+This page is an explanation of the git checkout command. It will cover usage examples and edge cases. 
+In Git terms, a "checkout" is the act of switching between different versions of a target entity.
+The git checkout command operates upon three distinct entities: files, commits, and branches.
+In addition to the definition of "checkout" the phrase "checking out" is commonly used to imply the act of executing the git checkout command.
+  
+The git checkout command lets you navigate between the branches created by the git branch. 
+
+The git checkout command has many keys.
+
+git checkout <branch>
+This command helps us to switch <branch> to it by updating the index and the files in the working tree, and by pointing HEAD at the branch. After that you can do your modifications to the files and as they are kept in the working tree you can commit them to the <branch>.
+
+git checkout -b <branch>
+Using this command you create a new <branch> and switch to it. 
+
+git checkout --detach [<branch>]
+git checkout [--detach] <commit>
+
+Prepare to work on top of <commit>, by detaching HEAD at it  and updating the index and the files in the working tree. 
+Local modifications to the files in the working tree are kept, so that the resulting working tree will be the state recorded
+in the commit plus the local modifications.
+ 
+ 
+When the <commit> argument is a branch name, the --detach option can be used to detach HEAD at the tip of the branch
+(git checkout <branch> would check out that branch without detaching HEAD).
+
+git checkout -q 
+git checkout --quiet
+This command suppresses feedback messages.
+
+git checkout -f
+git checkout --force
+When switching branches, proceed even if the index or the working tree differs from HEAD, and even if there are untracked files in the way.
+This is used to throw away local changes and any untracked files or directories that are in the way.
+When checking out paths from the index, do not fail upon unmerged entries; instead, unmerged entries are ignored.
+
+git checkout -t
+git checkout --track
+When creating a new branch, set up "upstream" configuration. 
+
+git checkout --no-track
+Do not set up "upstream" configuration.
+
+ git checkout --orphan <new_branch>
+Create a new orphan branch, named <new_branch>, started from <start_point> and switch to it.
+The first commit made on this new branch will have no parents and it will be the root of a new history totally disconnected from 
+all the other branches and commits.
+
+git checkout -p
+git checkout --patch
+You can use git checkout -p to selectively discard edits from your current working tree.
+
+git checkout <new_branch>
+Name for the new branch.
+
+
+
+
