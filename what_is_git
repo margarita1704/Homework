@@ -1,0 +1,25 @@
+What is Git?
+
+Git is a requirement for modern software developers today. 
+
+First of all let’s understand what VCS(Version Control System) is.
+If you think of your file as a book that you’re kind of collaboratively with, it has chapters, it has pages beginning middle and end, Version Control helps you to make changes to that while maintaining the entire flow and working with the team. It’s a way to make changes to files without worrying that something is going to get lost along the way. Not only that but it offers a backup in a history of any changes for any file line-by-line so if you ever need to see why something became, how it is, you can backtrack through it.
+Let’s imagine that you are working on a project and you accidentally delete a file. Using Version Control you’ve got backup so you can recover that work and you don’t lose anything. 
+Now let’s say even working on this project you’ve been saving things and you get pulled off of it for a year. After a year you come back and what are the changes you made, why you made them, VC gives an easy way to compare the current version of your project to the version that you were building and really see what those changes were and try to figure out why.
+So, if you made some changes to your project and you’ve committed to those changes you saved them but you want to see exactly what was the change compared to the main project, VC allows you to line by line see those changes and compare them to the base.
+Now, if you think you have a great idea for a part of the project and you want to experiment on in but you’re worrying about changing the main section of the project because you want that to be kind of in a good state VC allows you to break off a section of that lives in a silo on that iterate on in and then put it back to the main project.
+Now let’s say that someone else in your team thinks your idea is great and wants to work on it with you. Both of you can work on the same files at the same time and VC will allow you to pick and choose exactly which lines from one person version another person are used and which ones can't. 
+
+There are two main categories of VCS: centralized or CVCS and distributed or DVCS. 
+The Centralized VCS the entire project stored on a central server each person sends their changes to the central copy of the project. SVS is a well-known centralized system. 
+The distributed system, the entire project, all of its history is mirrored on everyone’s computer. The great example of distributed VCS is Git.
+
+So, why would you want to use Git?
+First of all, Git is as small as fast. Since nearly all operations are local on your machine it gets extremely fast. You’re just saving a snapshot of a file you already have. 
+Git alse distributed. So rather than grabbing a file that you want to work on, you have the entire project and its history on your machine. That means that everyone else who’s working on that project has it on their machine. It also means that there are many backups in case anything  happens, so you are always safe.
+Git uses a data model that you can always rebuild the project from all of its parts so you never have to worry about getting lost.
+It also has a staging area that allows you to line up files before you save them or kind of snapshot them. So you can make sure everything’s ready to go.
+And, finally it is open source and free. That means that everyone can download it, can use it and everyone can contribute to it if they want to. Understanding it will allow you to contribute to most open source projects.
+
+This is Git! Use and enjoy it!
+
