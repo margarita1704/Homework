@@ -1,0 +1,4 @@
+Pushing empty commits to remote
+
+I have used this command
+$ git commit --allow-empty-message
